@@ -4,7 +4,7 @@
 SELECT 컬럼명
 FROM 테이블명;
 ```
-SELECT: 가져올 컬럼명
+SELECT: 가져올 컬럼명  
 FROM: 데이터를 조회할 테이블명  
 
 <br>  
