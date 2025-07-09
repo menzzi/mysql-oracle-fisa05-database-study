@@ -139,6 +139,15 @@ WHERE sal + NVL(comm, 0) > (
 
 <br><br>
 
+> ⚠️ **헷갈렸던 점 정리**
+> 
+> - `NVL()` : NULL 값을 지정한 다른 값으로 대체할 때 사용  
+> - `NULLIF()` : 두 값이 같으면 NULL 반환, 다르면 첫 번째 값 반환  
+> - 문제를 만들면서 둘의 차이를 헷갈렸지만 직접 써보며 이해하게 됨  
+> - 특히 `NVL(comm, 0)`을 써서 NULL인 커미션을 0으로 처리하는 게 중요함
+
+<br><br>
+
 | [고태우](https://github.com/kohtaewoo) | [박여명](https://github.com/yeomyeoung) | [서민지](https://github.com/menzzi) | [최소영](https://github.com/ottffss1005) |
 | :------------------------------------: | :--------------------------------------: | :----------------------------------: | :----------------------------------------: |
 | <img src="https://avatars.githubusercontent.com/kohtaewoo" width="100" /> | <img src="https://avatars.githubusercontent.com/yeomyeoung" width="100" /> | <img src="https://avatars.githubusercontent.com/menzzi" width="100" /> | <img src="https://avatars.githubusercontent.com/ottffss1005" width="100" /> |
