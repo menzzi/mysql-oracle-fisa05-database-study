@@ -43,7 +43,7 @@ ORDER BY 컬럼명 ASC|DESC;
 
 <br><br>
 
-## 💡 MySQL만의 특징
+## ⭐ MySQL만의 특징
 ✅ 기본적으로 데이터 값의 대소문자를 구분하지 않음
 
 ⚠️ 하지만 컬럼명/테이블명 등은 대소문자 구분이 필요할 수 있음  
@@ -68,6 +68,35 @@ SELECT * FROM 테이블명 WHERE BINARY 컬럼명 = '값';
 각 팀원이 하나씩 출제한 SQL 연습 문제입니다.
 직접 데이터를 다뤄보며 실전 감각을 키우기 위한 스터디용 문제입니다.
 <br>
+
+### 🗂️ 사용 테이블 구조
+| 테이블명   | 설명        | 주요 컬럼                                                               | 제약 조건                                  |
+| ------ | --------- | ------------------------------------------------------------------- | -------------------------------------- |
+| `dept` | 부서 정보 테이블 | `deptno`, `dname`, `loc`                                            | `PRIMARY KEY(deptno)`                  |
+| `emp`  | 사원 정보 테이블 | `empno`, `ename`, `job`, `sal`, `comm`, `deptno`, `hiredate`, `mgr` | `PRIMARY KEY(empno)`, `deptno`는 외래키 역할 |
+
+```sql
+CREATE TABLE dept (
+    deptno               int  NOT NULL,
+    dname                varchar(20),
+    loc                  varchar(20),
+    CONSTRAINT pk_dept PRIMARY KEY (deptno)
+);
+
+CREATE TABLE emp (
+    empno                int  NOT NULL  AUTO_INCREMENT,
+    ename                varchar(20),
+    job                  varchar(20),
+    mgr                  int,
+    hiredate             date,
+    sal                  numeric(7,2),
+    comm                 numeric(7,2),
+    deptno               int,
+    CONSTRAINT pk_emp PRIMARY KEY (empno)
+);
+
+```
+
 
 ### 💡 Q1. 각 부서별 평균 월급 출력
 📝 문제 출제: 민지
