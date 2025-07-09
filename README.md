@@ -148,6 +148,7 @@ WHERE sal + NVL(comm, 0) > (
 
 <br><br>
 
+### 👥Team Members
 | [고태우](https://github.com/kohtaewoo) | [박여명](https://github.com/yeomyeoung) | [서민지](https://github.com/menzzi) | [최소영](https://github.com/ottffss1005) |
 | :------------------------------------: | :--------------------------------------: | :----------------------------------: | :----------------------------------------: |
 | <img src="https://avatars.githubusercontent.com/kohtaewoo" width="100" /> | <img src="https://avatars.githubusercontent.com/yeomyeoung" width="100" /> | <img src="https://avatars.githubusercontent.com/menzzi" width="100" /> | <img src="https://avatars.githubusercontent.com/ottffss1005" width="100" /> |
